@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hasil</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <h1 style="font-family:verdana;color:tomato;">RECEIPT</h1>
+        <hr>
+        <table border="0" cellspacing ="2">
+            <tbody>
+                <tr>
+                    <td><b>Nama Sayur</b></td>
+                    <td><b>:</b></td>
+                    <td><b th:text="${sayur}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Harga/kg</b></td>
+                    <td><b>:</b></td>
+                    <td><b th:text= Rp. ></b><b th:text="${harga}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Qty (kg)</b></td>
+                    <td><b>:</b></td>
+                    <td><b th:text="${qty}"></b> <b>kg</b> </td>
+                </tr>
+                <tr>
+                    <td><b>Harga Awal</b></td>
+                    <td><b>:</b></td>
+                    <td><b th:text= Rp. ></b> <b th:text="${hargaawal}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Diskon (%)</b></td>
+                    <td><b>:</b></td>
+                    <td><b th:text ="${disc}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Total Harga Diskon</b></td>
+                    <td><b>:</b></td>
+                    <td><b th:text= Rp. ></b> <b th:text="${discount}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Total Harga</b></td>
+                    <td><b>:</b></td>
+                    <td><b th:text= Rp. ></b> <b th:text="${total}"></b></td>
+                </tr>
+                <tr>
+                    <td><b>Pembayaran</b></td>
+                    <td><b>:</b></td>
+                    <td><b th:text= Rp. ></b> <b th:text="${bayar}"></b></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><b>Keterangan:</b</p>
+        <br><i th:text="${ket}"></i> </br>
+
+    </body>
+</html>
